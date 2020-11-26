@@ -3,6 +3,7 @@
 注释：
     作者：leilei
     这里仅记录学习资料，代码不可执行，可执行代码详见"src"文件夹
+    包含 "转onnx", "int8量化", "剪枝", "onnx2trt"
     像deepstream, TensorRT-Inference-Server等这里不介绍，详见官网。
 ```
 ## 环境配置要求
