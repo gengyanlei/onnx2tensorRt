@@ -2,7 +2,7 @@
 ```
 注释：
     作者：leilei
-    这里仅记录学习资料，代码不可执行，可执行代码详见"src"
+    这里仅记录学习资料，代码不可执行，可执行代码详见"src"文件夹
     像deepstream, TensorRT-Inference-Server等这里不介绍，详见官网。
 ```
 ## 环境配置要求
@@ -30,17 +30,19 @@
             ```
             建议：不要从网上搜博客，然后按照博客来解决问题！尽量参考deb安装后的sample样例代码，
             每个版本官方都会及时更新，这样不会走弯路！本文参考为trt7版本，因此参考的sample也是7
-            版本对应的代码。
+            版本对应的代码，找对应的版本查阅！
+            eg：量化、转onnx均可查阅
             ```
         + [tensorRt7.0支持的onnx的operations](https://docs.nvidia.com/deeplearning/tensorrt/archives/tensorrt-700/tensorrt-support-matrix/index.html#supported-ops)
-        + [yolov3_onnx含tensorrt推理](https://github.com/gengyanlei/onnx2tensorRT/tree/main/onnx/darknet2onnx/yolov3_onnx)
+        + [tensorRt不同版本链接](https://docs.nvidia.com/deeplearning/tensorrt/archives/index.html)
+        + [yolov3转onnx](https://github.com/gengyanlei/onnx2tensorRt/tree/main/samples/onnx/darknet/yolov3_onnx)
             ```
             采用deb\tar包安装的tensorRt，yolov3转onnx代码在如下路径：
                 /usr/src/tensorrt/samples/python/yolov3_onnx trt版本不同转onnx代码略有差异！
             tensorRt所有的python样例都在如下路径：
                 /usr/src/tensorrt/samples/python
             ```
-        + [**darknet yolov4转onnx的py代码**]()
+        + [**yolov4转onnx的py代码**](https://github.com/gengyanlei/onnx2tensorRt/tree/main/samples/onnx/darknet/yolov4_onnx)
             ```
             darknet yolov4转onnx引自此项目：
             https://github.com/linghu8812/tensorrt_inference/tree/master/Yolov4
@@ -97,7 +99,7 @@
 + (三) int8量化
 
     1. tensorRt量化
-        + [tensorRt int8 量化python样例代码]()
+        + [tensorRt int8 量化python样例代码](https://github.com/gengyanlei/onnx2tensorRt/tree/main/samples/int8_calibration/int8_caffe_mnist)
           ```
           采用deb\tar包安装的tensorRt，int8量化的python样例代码在如下路径：
           /usr/src/tensorrt/samples/python/int8_caffe_mnist
