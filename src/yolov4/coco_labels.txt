@@ -1,0 +1,5 @@
+hat
+head
+reflective_clothes
+other_clothes
+person
