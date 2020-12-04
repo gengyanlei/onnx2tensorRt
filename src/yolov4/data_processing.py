@@ -134,7 +134,6 @@ class PostprocessYOLO:
         self.letter_box = param_dict['letter_box']  # 是否按照yolov5的预测方式预测，若是则xywh均采用sigmoid操作
         self.onnx_sigmoid = param_dict['onnx_sigmoid']  # 转onnx时是否sigmoid
         self.batch = param_dict['input_shape'][0]
-        print(self.yolo_input_hw)
 
     def process(self, outputs, shape_orig_WH):
         '''
@@ -189,7 +188,6 @@ class PostprocessYOLO:
         assert len(boxes)==len(categories)
 
         # 类别操作
-        print(set(categories))
         nms_boxes, nms_categories, nscores = list(), list(), list()
         for category in set(categories):
             idxs = np.where(categories == category)

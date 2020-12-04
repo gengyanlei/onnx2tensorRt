@@ -55,7 +55,7 @@ def draw_bboxes(image_raw, bboxes, confidences, categories, all_categories, bbox
         bottom = min(image_raw.height, np.floor(y_coord + height + 0.5).astype(int))
 
         bbox_color = tuple(colors[category]) or bbox_color
-        draw.rectangle(((left, top), (right, bottom)), outline=bbox_color, width=1)
+        draw.rectangle(((left, top), (right, bottom)), outline=bbox_color, width=2)
         draw.text((left, top - 20), '{0} {1:.2f}'.format(all_categories[category], score), fill=bbox_color, font=font)
 
     return image_raw
@@ -232,7 +232,6 @@ class Detect:
             # 后处理，按照2种方式判断处理，yolov4原始的预测-参考yolov5变化后的预测
             # 图像原始尺寸 WH，因为时PIL读取
             shape_orig_WH = image_raw.size
-            print(shape_orig_WH)
 
             # 后处理是可以处理batch>=1的，但是这里的类写的只能是batch=1
             outputs_pred = self.postprocessor.process(trt_outputs, shape_orig_WH)
@@ -241,7 +240,6 @@ class Detect:
 
             # 画框，由于这里只能是单张图像，因此不必for遍历
             boxes, classes, scores = outputs_pred[0][0]
-            print(len(boxes))
             obj_detected_img = draw_bboxes(image_raw, boxes, scores, classes, self.all_categories)
 
             # 视频按照帧数来保存，图像按照名字保存,  注意一般视频不会超过5位数
@@ -395,4 +393,4 @@ class Detect:
 
 if __name__ == '__main__':
     detect = Detect(yaml_path=r'./config.yaml')
-    detect.predict(r'/home/gengyanlei/Datasets/image/Q1helmet20200204_1046.jpeg', r'./output')
+    detect.predict(r'/home/gengyanlei/Datasets/15_10_17.jpg', r'./output')
