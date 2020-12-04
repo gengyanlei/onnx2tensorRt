@@ -23,7 +23,10 @@
 | ![helmet-detect](https://github.com/gengyanlei/onnx2tensorRt/blob/main/src/yolov4/output/00000.jpg?raw=true) |
 | ---- |
 
-## 4. refer
+## 4. darknet yolov4 python API
++ [latest_darknet_API.py](https://github.com/gengyanlei/fire-detect-yolov4/blob/master/latest_darknet_API.py)
+
+## 5. refer
 + [darknet-yolov4](https://github.com/AlexeyAB/darknet)
 + [yolov3-paper](https://arxiv.org/abs/1804.02767)
 + [yolov4-paper](https://arxiv.org/abs/2004.10934)
