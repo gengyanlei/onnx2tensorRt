@@ -27,3 +27,4 @@
 + [darknet-yolov4](https://github.com/AlexeyAB/darknet)
 + [yolov3-paper](https://arxiv.org/abs/1804.02767)
 + [yolov4-paper](https://arxiv.org/abs/2004.10934)
++ [tensorrt_inference C++ version](https://github.com/linghu8812/tensorrt_inference)
