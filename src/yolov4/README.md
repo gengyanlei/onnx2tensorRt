@@ -9,7 +9,7 @@
 + export yolov3 onnx
 ```
     python yolov4_to_onnx.py --cfg_file cfg/yolov3.cfg --weights_file ***/***.weights 
-                             --output_file yolov3_608.onnx --strides 32，16，8 --neck FPN
+                             --output_file yolov3_608.onnx --strides 32,16,8 --neck FPN
 ```
 
 ## 2. run trt inference (onnx2trt-engine)
