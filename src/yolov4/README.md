@@ -5,6 +5,8 @@
 ```
     python yolov4_to_onnx.py --cfg_file cfg/yolov4-sg.cfg --weights_file ***/***.weights 
                              --output_file yolov4_608.onnx --strides 8,16,32 --neck PAN
+    
+    Note：It does not support yolov4 using yolov5's plus padding prediction method.
 ```
 + export yolov3 onnx
 ```
