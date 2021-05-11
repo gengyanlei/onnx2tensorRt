@@ -6,7 +6,7 @@
 ```
     darknet 
     mxnet1.6 + 
-    pytorch1.5 + (yolov5 support pytorch1.4+)
+    pytorch1.6 +
     tensorRt7 + (tensorRt7 support python3.4-3.7)
     onnx1.5 + (tensorRt7 support onnx1.5)
     onnxruntime 1.0
