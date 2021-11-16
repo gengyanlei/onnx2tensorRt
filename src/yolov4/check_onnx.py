@@ -2,6 +2,8 @@
 注释：
     (1)测试转onnx是否成功，首先采用onnxruntime测试一下输出
     (2)将onnx转trt后，对测试图像输出结构，进行评估指标，进而验证是否转trt有效
+    ----
+    若想使用onnxruntime-gpu，需要重新安装，现在使用的是cpu版本！
 '''
 import onnxruntime
 import numpy as np
